@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/template/style.css" />
+    <title>Amazona</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <!-- header -->
+      <header class="header">
+        <div class="brand">
+          <button onclick="openMenu()">&#9776;</button>
+          <a href="index.html">amazona</a>
+        </div>
+        <div class="header-links">
+          <a href="cart.html">Cart</a>
+          <a href="signin.html">Sign In</a>
+        </div>
+      </header>
+      <!-- sidebar -->
+      <aside class="sidebar">
+        <h3 class="sidebar-header">Shopping Catergories</h3>
+        <button class="sidebar-close-button" onclick="closeMenu()">x</button>
+        <ul>
+          <li><a href="index.html">Pants</a></li>
+          <li><a href="index.html">Shirts</a></li>
+        </ul>
+      </aside>
+      <main class="main">
+        <div class="content">
+          <ul class="products">
+            <li>
+              <div class="product">
+                <img class="product-image" src="images/d1.jpg" alt="product" />
+                <div class="product-name">
+                  <a href="product.html">Slim Shirt</a>
+                </div>
+
+                <div class="product-brand">Niki</div>
+                <div class="price">$60</div>
+                <div class="product-rating">4.5 Starts(10) Reviews</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </main>
+      <footer class="footer">All rights Reserved.</footer>
+    </div>
+    <!-- for open and close sidebar -->
+    <script>
+      function openMenu() {
+        document.querySelector(".sidebar").classList.add("open");
+      }
+      function closeMenu() {
+        document.querySelector(".sidebar").classList.remove("open");
+      }
+    </script>
+  </body>
+</html>
